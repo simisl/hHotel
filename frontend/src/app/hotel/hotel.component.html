@@ -1,0 +1,34 @@
+
+
+  <app-header></app-header>
+  <div class="mainBox">
+
+  <div class="bookScreen">
+
+      <img [src]="img" class="Img"/>
+
+    <div class="hotelFac">
+      <h3>{{data.name}}</h3>
+      <h4>Facilities</h4>
+      <p>Free Parking - {{data.freeparking}}</p>
+      <p>Free Wifi - {{data.freewifi}}</p>
+      <p>SeaView - {{data.seaview}}</p>
+      <p>Outdoor Pool - {{data.outdoorpool}}</p>
+      <p>Breakfast - {{data.breakfast}}</p>
+      <p>Spa - {{data.spa}}</p>
+      <p>{{data.description}}</p>
+      <button (click)="bookHotel()">Book</button>
+    </div>
+
+  </div>
+  <h2>
+    Recommended For You
+  </h2>
+  <div *ngFor="let hotel of hotelData" class="rImg">
+    <div>
+      <img [src]="hotel.image" class="rImgAlign" *ngIf="hotel.id!=data.id">
+      <figcaption>{{hotel.name}}</figcaption>
+    </div>
+
+  </div>
+</div>

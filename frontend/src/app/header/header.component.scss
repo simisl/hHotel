@@ -1,0 +1,50 @@
+.header{
+  width:90%;;
+  background-color: rgb(57, 172, 218);
+  color:white;
+  padding:10px;
+  margin-bottom: 10px;
+  margin:0 auto;
+}
+
+ul{
+  list-style: none;
+  font-size: large;
+  height:50px;
+  display: flex;
+
+}
+ul li{
+  display: flex;
+  align-items: center;
+
+  width:100%;
+  padding: 10px;
+}
+ li:hover{
+  color: skyblue;
+  font-weight:600;
+  background-color: white;
+  cursor: pointer;
+}
+
+.logo{
+  width: 69px;
+  height: fit-content;
+  padding-left: 50px;
+
+}
+li:hover .iconImg{
+
+  filter: brightness(.4)contrast(3.4);
+}
+.headerlogo{
+  display: flex;
+  padding-top: 10px;
+
+}
+.iconImg{
+  width: 9%;
+  height: fit-content;
+  margin-right: 10px;
+}

@@ -1,0 +1,22 @@
+<div class="header">
+  <div class="headerlogo">
+    <img src="/assets/logo.png" class="logo">
+    <h1>Hotel Booking</h1>
+
+  </div>
+  <ul>
+    <li (click)="bookingOpen('draft')">
+      <img src="/assets/draft.png" class="iconImg"/>
+      Draft Bookings
+    </li>
+    <li (click)="bookingOpen('booked')">
+      <img src="/assets/booked.png" class="iconImg"/>
+      View Booking
+    </li>
+
+    <li (click)="logout()">
+      <img src="/assets/visitors.png" class="iconImg"/>
+      logout
+    </li>
+  </ul>
+</div>

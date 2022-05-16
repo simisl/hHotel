@@ -1,0 +1,29 @@
+
+<app-header></app-header>
+
+<div class="inputArray">
+  <label for="from">From</label>
+  <input type="date" id="from" name="from" [min]=today [(ngModel)]="from">
+  <label id="to">To</label>
+  <input type="date" id="to" name="to" [min]=today [(ngModel)]="to"><br>
+</div>
+<div class="checkArray">
+  <div *ngFor="let data of checkBox">
+    <input type="checkbox" (change)="checkedData(data,$event)">
+    <label >{{data.name}}</label>
+  </div>
+</div>
+
+<div class="frontpageContainer">
+  <div  *ngFor="let hotel of hotelData">
+    <div class="imgArray">
+      <img [src]=hotel.image class="imgDisplay">
+      <figcaption>{{hotel.name}}</figcaption>
+      <p>Visitors: {{hotel.visitors}}</p>
+      <p>{{hotel.description}}</p>
+      <button (click)="openHotelPage(hotel)">View</button>
+    </div>
+</div>
+
+</div>
+

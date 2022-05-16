@@ -1,0 +1,40 @@
+<h1>
+  Booking Status
+</h1>
+<div>
+<table >
+  <th>
+    Hotel Name
+  </th>
+  <th>
+    Image
+  </th>
+  <th>
+    Booked From
+  </th>
+  <th>
+    Booked To
+  </th>
+  <th>Status</th>
+  <tr *ngFor="let data of displayData">
+    <td>
+      {{data.hotelname}}
+    </td>
+    <td>
+      <div class="imgBox">
+        <img [src]="data.hotelimage"/>
+    </div>
+    </td>
+    <td>
+      {{data.from}}
+    </td>
+    <td>
+      {{data.to}}
+    </td>
+    <td>
+      {{data.status}}
+    </td>
+  </tr>
+
+</table>
+</div>

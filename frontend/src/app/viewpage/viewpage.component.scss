@@ -1,0 +1,22 @@
+// table{
+//   width:100%;
+//   white-space: nowrap;
+//   border:1px solid red;
+// }
+table th, td{
+  border:1px solid black;
+  text-align: left;
+}
+.imgBox{
+  width: 98%;;
+}
+img{
+  width:100%;
+}
+table {
+  table-layout: fixed ;
+  width: 100% ;
+}
+td {
+  width: 25% ;
+}
